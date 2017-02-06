@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MyWebsite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html >
+    
+<head runat="server">
+    <link rel="stylesheet" href="Styles/Stylesheet.css" type="text/css"/>
+    <title>My Website</title>  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+            <div id="banner">             
+                           
+            </div>
+            <div id="navigation">                                 
+                    <asp:Menu ID="Wrapper" Font-Bold="True" runat="server" Orientation="Horizontal" StaticSubMenuIndent="16px">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Pages/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Pages/about.aspx" Text="About" Value="About"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Pages/Login.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                   
+               
+            </div>
+
+            <div id="content">
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">      
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>
