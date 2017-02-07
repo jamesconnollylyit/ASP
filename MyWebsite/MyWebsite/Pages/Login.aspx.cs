@@ -14,6 +14,11 @@ namespace MyWebsite.Pages
 
         }
 
-       
+        protected void Login_Click(object sender, EventArgs e)
+        {
+            var username = tbxUsername.Text;
+            var password = tbxPassword.Text;           
+            lblMessage.Text = "User details entered are " + username + " " + password;          
+        }
     }
 }

@@ -37,6 +37,36 @@
     
 }
 
+.main_menu
+    {
+        width: auto;
+        background-color: white;
+        color: #000;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+        vertical-align: 10px;
+        font-size: medium; 
+        margin-left: 25px; 
+        margin-top: 0px;
+        
+Display: inline-block;
+                  
+    }
+
+.button
+{
+    width: 100px;
+    
+    horizontalpadding: 50px;
+}
+
+.selected
+    {
+        background-color: #852B91;
+        color: #fff;
+    }
 
 #navigation
 {

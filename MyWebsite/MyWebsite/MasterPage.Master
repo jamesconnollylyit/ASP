@@ -14,18 +14,18 @@
     <form id="form1" runat="server">
     <div id="wrapper">
             <div id="banner">             
-                           
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Header.jpg" Width="100%" />
             </div>
-            <div id="navigation">                                 
-                    <asp:Menu ID="Wrapper" Font-Bold="True" runat="server" Orientation="Horizontal" StaticSubMenuIndent="16px">
+            <div id="navigation">                                              
+                    <asp:Menu Width="100%" ID="Wrapper" runat="server" Orientation="Horizontal"  CssClass="main_menu" >
+                        <staticmenuitemstyle horizontalpadding="50" />
                         <Items>
                             <asp:MenuItem NavigateUrl="~/Pages/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Pages/about.aspx" Text="About" Value="About"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Pages/Login.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Pages/Services.aspx" Text="Services" Value="Services"></asp:MenuItem>
                         </Items>
-                    </asp:Menu>
-                   
-               
+                    </asp:Menu>                                
             </div>
 
             <div id="content">

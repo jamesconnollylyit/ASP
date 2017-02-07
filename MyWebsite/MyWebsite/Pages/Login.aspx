@@ -7,14 +7,17 @@
     <br />
     <br />
     <asp:Label ID="Wrapper" runat="server" Text="User name"></asp:Label> 
-    <asp:textbox runat="server" name="tbxUsername"></asp:textbox>
+    <asp:textbox runat="server" name="tbxUsername" ID="tbxUsername"></asp:textbox>
     <br />
     <br />
     <br />
-    <asp:Label ID="Label1" runat="server" Text="Password"></asp:Label> 
+    <asp:Label ID="tbxPassword" runat="server" Text="Password"></asp:Label> 
     <asp:textbox runat="server" name="tbxPassword"></asp:textbox>
     <br />
     <br />
-    <asp:button runat="server" text="Cancel" />
-    <asp:button runat="server" text="Login" name="btnLogin" id="Button" />
+    <asp:Label ID="lblMessage" runat="server" text=" "></asp:Label>
+    <br />
+    <br />
+    <asp:button runat="server" text="Cancel" CssClass="button"/>
+    <asp:button runat="server" text="Login" name="btnLogin" id="btnLogin" CssClass="button" OnClick="Login_Click"/>
 </asp:Content>
